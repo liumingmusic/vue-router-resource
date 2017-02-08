@@ -1,15 +1,19 @@
 <template>
-	<div class="app">
-	  
+	<div>
+	  	<h1>厕所</h1>
 	</div>
 </template>
 
 <script>
+
 export default {
 	data: function(){
 		return {
 
 		}
+	},
+	methods: {
+
 	}
 }
 </script>
