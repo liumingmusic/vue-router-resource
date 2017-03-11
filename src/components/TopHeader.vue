@@ -8,10 +8,11 @@
 <script>
 
 export default {
+	// 父组件传入子组件的值
 	props: ['headerTitle'],
 	data: function(){
 		return {
-
+			
 		}
 	},
 	methods: {

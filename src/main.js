@@ -11,9 +11,9 @@ import 'muse-ui/dist/theme-carbon.css'
 import App from './App'
 
 //路由文件
-import Toilet from './components/views/toilet'
+import Index from './components/views/index'
 import Read from './components/views/read'
-import Weather from './components/views/weather'
+import Person from './components/views/person'
 import Setting from './components/views/setting'
 
 //组件全部加载使用
@@ -24,16 +24,16 @@ Vue.use(VueResource);
 //路由文件配置
 const routes = [{
     path: '/',
-    component: Toilet //重定向
+    component: Index //重定向
 },{
-    path: '/toilet',
-    component: Toilet
+    path: '/index',
+    component: Index
 },{
     path: '/read',
     component: Read
 },{
-    path: '/weather',
-    component: Weather
+    path: '/person',
+    component: Person
 },{
     path: '/setting',
     component: Setting
@@ -44,6 +44,7 @@ const router = new VueRouter({
     routes: routes
 });
 
+//初始化入口
 new Vue({
     el: '#app',
     router,

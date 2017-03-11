@@ -7,14 +7,14 @@
 		<!-- nav tabs -->
 		<mu-paper class="mu-paper-bottom">
 			<mu-bottom-nav :value="bottomNav" @change="bottomNavChange">
-				<mu-bottom-nav-item value="toilet" title="厕所" icon="ondemand_video">
-					<router-link to="/toilet" class="display-block"></router-link>
+				<mu-bottom-nav-item value="index" title="首页" icon="ondemand_video">
+					<router-link to="/index" class="display-block"></router-link>
 				</mu-bottom-nav-item>
 				<mu-bottom-nav-item value="read" title="阅读" icon="music_note">
 					<router-link to="/read" class="display-block"></router-link>
 				</mu-bottom-nav-item>
-				<mu-bottom-nav-item value="weather" title="天气" icon="books">
-					<router-link to="/weather" class="display-block"></router-link>
+				<mu-bottom-nav-item value="person" title="个人" icon="books">
+					<router-link to="/person" class="display-block"></router-link>
 				</mu-bottom-nav-item>
 				<mu-bottom-nav-item value="setting" title="设置" icon="photo">
 					<router-link to="/setting" class="display-block"></router-link>
@@ -31,22 +31,22 @@ import TopHeader from './components/topHeader'
 export default {
 	data: function(){
 		return {
-      		bottomNav: 'toilet',
-      		headerTitle: "厕所"
+      		bottomNav: 'index',
+      		headerTitle: "首页"
 		}
 	},
 	methods: {
 		bottomNavChange (val) {
 			var $this = this;
 			switch(val){
-				case "toilet": 
-					$this.headerTitle = "厕所";
+				case "index": 
+					$this.headerTitle = "首页";
 					break;
 				case "read": 
 					$this.headerTitle = "阅读";
 					break;
-				case "weather": 
-					$this.headerTitle = "天气";
+				case "person": 
+					$this.headerTitle = "个人";
 					break;
 				case "setting": 
 					$this.headerTitle = "设置";
